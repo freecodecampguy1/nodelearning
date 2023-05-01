@@ -7,7 +7,7 @@ app.get("/",function(req,res){
   }
 )
 
-
+app.use(__dirname+'/public',express.static());
 
 
 
