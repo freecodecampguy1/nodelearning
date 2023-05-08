@@ -41,7 +41,13 @@ app.get("/:word/echo",function(req,res){
    res.json({echo: word})
 });
 
-
+app.get("/name", function(req,res){
+    var firstName = req.query.first;
+    var lasName = req.query.last;
+    res.json({
+      name: firstName+' '+lastName
+    })
+});
 
 
 
