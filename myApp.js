@@ -37,7 +37,8 @@ app.get("/now",function(req,res,next){
 });
 
 app.get("/:word/echo",function(req,res){
-    res.send({echo: req.params.word})
+   let word = req.params.word
+   res.send({echo: word})
 });
 
 
